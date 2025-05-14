@@ -1,0 +1,13 @@
+def PR_KEY
+def BRANCH
+def count = 0
+pipeline     {
+
+	/*
+	Prerequisites: dotnet, smbclient, 7z, reportgenerator, sonarscanner, git
+	*/
+
+    agent {
+        label 'dotnet8'
+    }
+	}
